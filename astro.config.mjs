@@ -21,7 +21,8 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://fuwari.vercel.app/",
+  outDir: '/var/www/sisada.tinymeepletalk.com',
+  site: "https://sisada.tinymeepletalk.com",
   base: "/",
   trailingSlash: "always",
   integrations: [
