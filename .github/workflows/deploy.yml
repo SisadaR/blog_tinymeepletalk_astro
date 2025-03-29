@@ -1,0 +1,24 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main  # Change if using a different branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Connect to VPS and DeployConnect to VPS and Deploy
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.VPS_HOST }}        # Add VPS host here
+          username: ${{ secrets.VPS_USER }}    # Add username here
+          key: ${{ secrets.SSH_PRIVATE_KEY }}  # Add the SSH private key secret
+          port: 22
+          script: |
+            cd /var/www/sisada.tinymeepletalk.com
+            ./deploy_blog.sh
