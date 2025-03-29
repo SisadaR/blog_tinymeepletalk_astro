@@ -8,7 +8,7 @@ git pull origin main
 pnpm install
 
 # Build the Astro site
-pnpm run build
+pnpm build
 
 # Restart the server (if using PM2)
 pm2 restart sisada-blog
