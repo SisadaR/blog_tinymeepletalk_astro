@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/deploy/astro-project || exit
+cd ~/astro-blog || exit
 
 # Pull latest changes
 git pull origin main
@@ -8,7 +8,7 @@ git pull origin main
 pnpm install
 
 # Build the Astro site
-pnpm build
+pnpm run build
 
 # Restart the server (if using PM2)
 pm2 restart sisada-blog
