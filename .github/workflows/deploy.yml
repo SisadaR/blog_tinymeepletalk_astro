@@ -20,5 +20,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}  # Add the SSH private key secret
           port: 22
           script: |
-            cd /astro-project
+            cd ~/astro-project
             ./deploy_blog.sh
