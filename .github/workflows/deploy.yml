@@ -20,5 +20,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}  # Add the SSH private key secret
           port: 22
           script: |
+            export NODE_OPTIONS="--max-old-space-size=512"
             cd ~/astro-project
             ./deploy_blog.sh
