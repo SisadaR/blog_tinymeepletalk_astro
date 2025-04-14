@@ -1,5 +1,6 @@
 ---
 title: Charybdis Nano
+description: ""
 published: 2025-04-12
 image: ./images/2025-04-12_cover.jpg
 tags:
