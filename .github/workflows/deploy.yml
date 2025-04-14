@@ -22,4 +22,4 @@ jobs:
           script: |
             export NODE_OPTIONS="--max-old-space-size=512"
             cd /home/deploy/astro-project
-            ./deploy_blog.sh
+            deploy_blog.sh
