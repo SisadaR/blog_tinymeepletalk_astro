@@ -6,6 +6,7 @@ image: ./images/2025-04-12_cover.jpg
 tags:
   - split_keyboard
   - keyboard
+  - gadget
 category: tech
 draft: false
 ---
