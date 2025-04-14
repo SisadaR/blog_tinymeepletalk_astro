@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/astro-blog || exit
+cd /home/deploy/astro-project || exit
 
 # Pull latest changes
 git pull origin main
