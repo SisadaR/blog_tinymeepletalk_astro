@@ -3,10 +3,10 @@ title: Free Self Host Analytic Tracking on Raspberry PI 3
 published: 2025-04-20
 description: ""
 image: ./images/2025-04-20_cover.jpg
-tags:
-  - raspberrypi
-  - selfhost
-  - analytic
+tags: 
+ - raspberrypi
+ - selfhost
+ - analytic
 category: tech
 draft: false
 ---
@@ -128,18 +128,16 @@ https://myanalytics.mysite.com
 ```
 
 สำหรับการ tracking สำหรับ Astro ก็จะไปหาไฟล์ที่เป็น base layout ของ theme ที่เราใช้ ปกติจะอยู่แถวๆ
-`src/layouts/BaseLayout.astro` ก็ไปใส่แบบก่อน `</ head>` นิดนึง
+==src/layouts/BaseLayout.astro== ก็ไปใส่แบบก่อน </head> นิดนึง
 
 ```
 <script
   async
   defer
-  data-website-id="YOUR-UMAMI-WEBSITE-ID" 
+  data-website-id="YOUR-UMAMI-WEBSITE-ID" <-- ตัว ID ตอน setup umami เพื่อเพิ่ม tracking มันจะมีเตรียมให้ ก็ไปเอามาใส่นะ
   src="https://myanalytics.mysite.com/script.js"
 ></script>
 ```
-
-> ตัว ID ตอน setup umami เพื่อเพิ่มเวบที่จะให้ tracking มันจะมีให้กด edit แล้วไปดู id ได้ ก็ไปเอามาใส่นะ
 
 ของ Flarum ก็ใช้ script เดียวกัน (แต่เปลี่ยน ID) แต่เอาไปใส่ไว้ตรงหน้า Admin แล้วไปที่ **"Appearance"** → **Custom Header** แล้วก็แปะลงไป.
 
