@@ -23,7 +23,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  outDir: '/var/www/sisada.tinymeepletalk.com',
+  outDir: './dist',
   site: "https://sisada.tinymeepletalk.com",
   base: "/",
   trailingSlash: "always",
