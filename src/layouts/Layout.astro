@@ -146,7 +146,8 @@ const bannerOffset =
 		<slot name="head"></slot>
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
-		<script defer src="https://umami.tinymeepletalk.com/script.js" data-website-id="bde5d5e8-6ed8-487e-9833-ffa20c4186e4"></script>
+		<script is:inline defer src="https://umami.tinymeepletalk.com/script.js" data-website-id="bde5d5e8-6ed8-487e-9833-ffa20c4186e4"></script>
+
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
